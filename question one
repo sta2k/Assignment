@@ -1,0 +1,17 @@
+from numpy import *
+i = int (input("no of employee:"))
+list_age = []
+for x in range (i):
+    j = int(input("employee age:"))
+    if j>0:
+        list_age.append(j)
+    else:
+        print("wrong input")
+age = array(list_age)
+min_age = age[0]
+for x in range (i):
+    if min_age> age[x]:
+        min_age = age[x]
+    else:
+        pass
+print("min age of employee:",min_age)
