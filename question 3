@@ -1,0 +1,13 @@
+from numpy import *
+import random
+list_cgpa=[]
+list_grace=[]
+count=0
+for i in range(20):
+    cgpa = round(random.uniform(0,10),1)
+    list_cgpa.append(cgpa)
+    if 4.9>=cgpa>=4.5:
+        list_grace.append(5.0)
+        print("Roll_no:",i,"Before grace:" , list_cgpa[i], "after grace:",list_grace[i])
+    else:
+        list_grace.append(list_cgpa[i])
