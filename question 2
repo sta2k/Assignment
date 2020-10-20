@@ -1,0 +1,15 @@
+#question number 2
+from numpy import *
+uni_emp=int(input("Type no of employees:"))
+id=[]
+point=[]
+for i in range (uni_emp):
+    uid=int(input("Type uid of employee:"))
+    pms=int(input("Type pms points of the employee:"))
+    point.append(pms)
+
+    if pms>7:
+        id.append(uid)
+Bonus=[bonus+1 for bonus in point if bonus>7]
+print("Employees who got bonus are:", id,"bonus pms points:", Bonus)
+
